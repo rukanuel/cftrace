@@ -1,8 +1,7 @@
 # Cloudflare Trace API
 CfTrace is a Java API for interacting with Cloudflare's Trace system and retrieving various trace and geo-related data. 
-This library allows users to query Cloudflare's services and get details about their network connections, including location, IP, and more.
 
-Add via Maven & JitPack
+Add via Maven:
 ```xml
 <repositories>
     <repository>
@@ -16,6 +15,19 @@ Add via Maven & JitPack
     <artifactId>cftrace</artifactId>
     <version>1</version>
 </dependency>
+```
+
+Add via Gradle:
+```xml
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+...
+dependencies {
+    implementation 'com.rukanuel:cftrace:1'
+}
 ```
 
 ## Usage
